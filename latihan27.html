@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Belajar Navigasi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Bagian header atas: logo & nama toko + login/registrasi */
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .store-name {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .store-name span {
+      color: black;
+    }
+
+    .auth-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .auth-buttons a {
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .btn-login {
+      background-color: black;
+    }
+
+    .btn-register {
+      background-color: black;
+    }
+
+    /* Navbar menu */
+    .navbar {
+      background-color: yellow;
+      width: 100%;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 10px 0;
+      gap: 30px;
+    }
+
+    .menu li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .menu li a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header atas -->
+  <div class="header-top">
+    <div class="logo-container">
+      <img src="Al-Fath.jpeg" alt="Logo Toko Buku Al-Fath" />
+      <div class="store-name"><span>Toko Buku Al-Fath</span></div>
+    </div>
+    <div class="auth-buttons">
+      <a href="registrasi.html" class="btn-register">Registrasi</a>
+      <a href="login.html" class="btn-login">Login</a>
+    </div>
+  </div>
+
+  <!-- Menu navigasi -->
+  <nav class="navbar">
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Buku.html">Buku</a></li>
+      <li><a href="Majalah.html">Majalah</a></li>
+      <li><a href="Koran.html">Koran</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>
