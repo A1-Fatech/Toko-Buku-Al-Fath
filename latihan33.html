@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>CERPEN</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 90%;
+      margin: 30px auto;
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+      padding-top: 20px;
+      text-align: center;
+    }
+    .book-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .book-card {
+      width: 260px;
+      background: #f2f2f2;
+      border-radius: 12px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+      padding: 25px 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .book-card img {
+      width: 100px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    .book-title {
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+    .book-author {
+      font-size: 13px;
+      color: #555;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>CERPEN</h1>
+    <div class="book-list">
+      <div class="book-card">
+        <img src="cerpen1.jpeg" alt="Buku 1">
+        <div class="book-title">Rp 85.000,00</div>
+        <a href="cerpen1.html">Detail</a>
+      </div>
+      <div class="book-card">
+        <img src="cerpen2.jpeg" alt="Buku 1">
+        <div class="book-title">Rp 79.000,00</div>
+        <a href="cerpen2.html">Detail</a>
+      </div>
+      <div class="book-card">
+        <img src="cerpen3.jpeg" alt="Buku 1">
+        <div class="book-title">Rp 52.500,00</div>
+        <a href="cerpen3.html">Detail</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
