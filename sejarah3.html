@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Sinopsis Buku</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f4f7fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 480px;
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.09);
+            margin: 50px auto;
+            padding: 28px 32px 32px 32px;
+        }
+        .book-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 24px;
+        }
+        .cover img {
+            width: 120px;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            border: 1px solid #e0e0e0;
+        }
+        .info {
+            flex: 1;
+        }
+        .info p {
+            margin: 6px 0 0 0;
+            font-size: 15px;
+        }
+        .info p:first-child {
+            margin-top: 0;
+        }
+        .sinopsis-label {
+            margin-top: 28px;
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 1.2px;
+            color: #357abd;
+        }
+        .sinopsis {
+            margin-top: 10px;
+            margin-bottom: 24px;
+            color: #333;
+            font-size: 15px;
+            line-height: 1.7;
+            background: #f7fafd;
+            border-left: 4px solid #4CAF50;
+            padding: 14px 18px;
+            border-radius: 6px;
+        }
+        .beli-btn {
+            display: block;
+            width: 100%;
+            padding: 12px 0;
+            background: linear-gradient(90deg,#4CAF50,#43a047);
+            color: #fff;
+            border: none;
+            border-radius: 24px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 8px rgba(76,175,80,0.07);
+            transition: background 0.2s, transform 0.17s;
+        }
+        .beli-btn:hover {
+            background: linear-gradient(90deg,#43a047,#388e3c);
+            transform: translateY(-2px) scale(1.03);
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 16px 6vw 24px 6vw;
+            }
+            .book-header {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+            }
+            .cover img {
+                width: 90px;
+                height: 130px;
+            }
+            .sinopsis {
+                font-size: 14px;
+                padding: 10px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="book-header">
+            <div class="cover">
+                <img src="Buku 3.jpeg" alt="sampul buku">
+            </div>
+            <div class="info">
+                <p><strong>Judul:</strong> Bumi Manusia</p>
+                <p><strong>Pengarang:</strong> Pramoedya Ananta Toer</p>
+                <p><strong>Penerbit:</strong> Mitra dan Lentera Dipantara</p>
+                <p><strong>Jumlah:</strong> 535 halaman</p>
+            </div>
+        </div>
+        <div class="sinopsis-label">SINOPSIS</div>
+        <div class="sinopsis">
+            Terdapat tiga unsur fundamental menjadi perekat bagi periode historis itu. Satu, unsur kebudayaan dan keberagamaan: islamisasi Indonesia yang dimulai sejak tahun 1200 dan berlanjut sampai sekarang.
+        <button class="beli-btn">BELI</button>
+    </div>
+</body>
+</html>
